@@ -10,6 +10,10 @@ links.forEach(link => {
         this.classList.add('active-link');
     });
 });
+
+
+
+
 const linkss = document.querySelectorAll('#mobile-menu a');
 linkss.forEach(link => {
     link.addEventListener('click', function() {
@@ -17,6 +21,10 @@ linkss.forEach(link => {
         this.classList.add('active-link');
     });
 });
+
+
+
+
 const items = document.querySelector('.carousel-items');
 const indicators = document.querySelectorAll('.indicator');
 const totalItems = document.querySelectorAll('.carousel-item').length;
