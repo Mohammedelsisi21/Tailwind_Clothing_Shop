@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active-link {
+    @apply text-yellow-500 font-bold border-b-2 border-red-600;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixteen Clothing Shop</title>
+    <link rel="shortcut icon" href="./images/product_04.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+
+    <nav class="bg-gray-600 p-4 fixed z-50 w-full">
+        <div class="container xl:px-60 md:px-12 flex items-center justify-between">
+            <a href="#">
+                <h2 class="uppercase text-white font-bold text-2xl">sixteen <span class="capitalize text-red-600">clothing</span></h2>
+            </a>
+            <ul class="md:flex hidden space-x-4 list-none" id="desktop-menu">
+                <li class="relative"><a href="#index" class="text-white hover:text-gray-300 transition-colors duration-300 capitalize after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">home</a></li>
+                <li class="relative"><a href="#products" class="text-white hover:text-gray-300 transition-colors duration-300 capitalize after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">our products</a></li>
+                <li class="relative"><a href="#about" class="text-white hover:text-gray-300 transition-colors duration-300 capitalize after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">about us</a></li>
+                <li class="relative"><a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-300 capitalize after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">contact us</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="hidden md:hidden space-x-4 list-none" id="mobile-menu">
+            <li class="relative"><a href="#index" class="text-white hover:text-gray-300 capitalize transition-colors duration-300 px-8 inline-block pb-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">home</a></li>
+            <li class="relative"><a href="#products" class="text-white hover:text-gray-300 capitalize transition-colors duration-300 px-4 inline-block pb-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">our products</a></li>
+            <li class="relative"><a href="#about" class="text-white hover:text-gray-300 capitalize transition-colors duration-300 px-4 inline-block pb-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">about us</a></li>
+            <li class="relative"><a href="#contact" class="text-white hover:text-gray-300 capitalize transition-colors duration-300 px-4 inline-block pb-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 hover:after:w-full after:transition-all after:duration-300">contact us</a></li>
+        </ul>
+    </nav>
+    <div class="carousel relative overflow-hidden w-full">
+        <div class="carousel-items flex transition-transform duration-500">
+            <div class="carousel-item w-full flex-shrink-0 relative">
+                <img src="./images/slide_01.jpg" alt="Slide 1" class="w-full h-auto">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+                    <h1 class="text-red-500 capitalize text-xl md:text-4xl lg:text-5xl font-bold mb-2">Flash Deals</h1>
+                    <p class="text-white text-lg md:text-5xl lg:text-3xl font-sans tracking-widest">Get your best products</p>
+                </div>
+            </div>
+            <div class="carousel-item w-full flex-shrink-0 relative">
+                <img src="./images/slide_02.jpg" alt="Slide 2" class="w-full h-auto">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+                    <h1 class="text-red-500 capitalize text-xl md:text-4xl lg:text-5xl font-bold mb-2">Lat Minute</h1>
+                    <p class="text-white text-lg md:text-5xl lg:text-3xl font-sans tracking-widest">Get your best products</p>
+                </div>
+
+            </div>
+            <div class="carousel-item w-full flex-shrink-0 relative">
+                <img src="./images/slide_03.jpg" alt="Slide 3" class="w-full h-auto">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+                    <h1 class="text-red-500 capitalize text-xl md:text-4xl lg:text-5xl font-bold mb-2">Best Offer</h1>
+                    <p class="text-white text-lg md:text-5xl lg:text-3xl font-sans tracking-widest">New Arrivals On Sale</p>
+                </div>
+            </div>
+        </div>
+        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800  rounded-sm text-white px-4 py-2">Prev</button>
+        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 rounded-sm  text-white px-4 py-2">Next</button>
+        <div class="carousel-indicators flex justify-center space-x-2 absolute bottom-32 left-1/2 transform -translate-x-1/2">
+            <div class="indicator w-3 h-3 bg-gray-300 rounded-full" data-index="0"></div>
+            <div class="indicator w-3 h-3 bg-gray-300 rounded-full" data-index="1"></div>
+            <div class="indicator w-3 h-3 bg-gray-300 rounded-full" data-index="2"></div>
+        </div>
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8">
+        <div class="flex justify-between items-center mb-3">
+            <h4 class="text-gray-900 text-xl font-semibold">Latest Products</h4>
+            <a href="all-products.html" class="text-red-500 font-bold hover:underline">
+                view all products <i class="fa-solid fa-arrow-right fa-bounce"></i>
+            </a>
+        </div>
+        <hr class="mb-5 border-gray-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_01.jpg" alt="Product Image" class="w-full h-auto object-cover" id="">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_02.jpg" alt="Product Image" class="w-full h-auto object-cover">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_03.jpg" alt="Product Image" class="w-full h-auto object-cover">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_04.jpg" alt="Product Image" class="w-full h-auto object-cover">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_05.jpg" alt="Product Image" class="w-full h-auto object-cover">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="./images/product_06.jpg" alt="Product Image" class="w-full h-auto object-cover">
+                    <a href="#!" class="absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300"></a>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-semibold">Title goes here</a>
+                        <h5 class="text-xl font-bold">$25.75</h5>
+                    </div>
+                    <p class="text-gray-600 my-2">Lorem ipsum dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600">Reviews (24)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8">
+        <div class="">
+            <h2 class="text-5xl font-bold text-gray-400">About Sixteen Clothing</h2>
+            <hr class="my-5 border-gray-300">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h5 class="text-lg font-semibold mb-3 text-blue-300">Looking for the best products?</h5>
+                <p class="mb-4"><a href="#" class="text-black hover:text-black/50 transition-colors duration-300">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a href="#" class="text-blue-500 hover:underline">Contact us</a> for more info.</p>
+                <p><a href="#" class="text-black hover:text-black/50 transition-colors duration-300">Lorem ipsum dolor sit amet.</a></p>
+                <p><a href="#" class="text-black hover:text-black/50 transition-colors duration-300">Consectetur an adipisicing elit</a></p>
+                <p><a href="#" class="text-black hover:text-black/50 transition-colors duration-300">It aquecorporis nulla aspernatur</a></p>
+                <p><a href="#" class="text-black hover:text-black/50 transition-colors duration-300">Corporis, omnis doloremque</a></p>
+                <button class="my-3 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-all duration-300 hover:shadow-lg hover:shadow-red-500">read more</button>
+            </div>
+            <div>
+                <img src="./images/feature-image.jpg" class="w-full h-auto mt-5" alt="Feature Image">
+            </div>
+        </div>
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8">
+        <hr class="border-gray-300">
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-black/10 rounded-md p-4 ">
+            <div>
+                <h5 class="text-xl font-semibold text-blue-400">Creative & Unique Sixteen Products</h5>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+            </div>
+            <div class="text-right">
+                <button class=" my-3 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-all duration-300 hover:shadow-lg hover:shadow-red-500 capitalize">purchase now</button>
+            </div>
+        </div>
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8">
+        <hr class="border-gray-300">
+    </div>
+    <div class="container xl:px-60 md:px-12 py-8 text-center font-mono">
+        COPYRIGHT © 2023 SIXTEEN CLOTHING CO., LTD. - DESIGN : <span class="text-red-500">Mohamed ELsisi</span>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="./js/icons.min.js"></script>
+</body>
+</html>
