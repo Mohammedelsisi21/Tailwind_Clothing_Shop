@@ -18,4 +18,16 @@
     .btn-main {
         @apply my-3 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-all duration-300 hover:shadow-lg hover:shadow-red-500 capitalize
     }
+    .main-container {
+        @apply container xl:px-60 md:px-12 py-8
+    }
+    .link-product {
+        @apply absolute inset-0 bg-gray-300 bg-opacity-20 hover:bg-opacity-50 transition duration-300
+    }
+    .about-sec {
+        @apply text-black hover:text-black/50 transition-colors duration-300
+    }
+    .box-pro {
+        @apply bg-white shadow-lg rounded-lg overflow-hidden
+    }
 }
