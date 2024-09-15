@@ -8,6 +8,9 @@ module.exports = {
       },
       spacing : {
         padding: "2rem"
+      },
+      backgroundImage: {
+        'product-cover': "url('./images/product.jpg')",
       }
     },
   },
