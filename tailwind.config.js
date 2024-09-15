@@ -10,7 +10,7 @@ module.exports = {
         padding: "2rem"
       },
       backgroundImage: {
-        'product-cover': "url('./images/product.jpg')",
+        'product-cover': "url(./images/product.jpg)",
       }
     },
   },

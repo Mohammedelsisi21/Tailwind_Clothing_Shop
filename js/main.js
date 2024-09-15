@@ -14,14 +14,22 @@ links.forEach(link => {
 
 
 
-const linkss = document.querySelectorAll('#mobile-menu a');
-linkss.forEach(link => {
+const links_two = document.querySelectorAll('#mobile-menu a');
+links_two.forEach(link => {
     link.addEventListener('click', function() {
-        linkss.forEach(l => l.classList.remove('active-link'));
+        links_two.forEach(l => l.classList.remove('active-link'));
         this.classList.add('active-link');
     });
 });
 
+
+const links_three = document.querySelectorAll('.link-prod');
+links_three.forEach(link => {
+    link.addEventListener('click', function() {
+        links_three.forEach(l => l.classList.remove('text-red-600'));
+        this.classList.add('text-red-600');
+    });
+});
 
 
 

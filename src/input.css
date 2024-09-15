@@ -30,4 +30,7 @@
     .box-pro {
         @apply bg-white shadow-lg rounded-lg overflow-hidden
     }
+    .link-prod {
+        @apply text-black hover:text-red-500 transition-colors duration-500 text-sm font-bold ml-4
+    }
 }
